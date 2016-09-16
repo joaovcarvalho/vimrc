@@ -3,10 +3,11 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
 colors xoria256
+set hidden
 
 " set the runtime path to include Vundle and initialize
-set rtp+=$HOME/vimfiles/bundle/Vundle.vim
-call vundle#begin("$HOME/vimfiles/bundle/")
+set rtp+=/home/joaocarvalho/.vim/bundle/Vundle.vim
+call vundle#begin("/home/joaocarvalho/.vim/bundle/")
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -38,6 +39,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tomtom/tcomment_vim'
 
 Plugin 'vim-ctrlspace/vim-ctrlspace'
+
+Plugin 'tpope/vim-rails'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
