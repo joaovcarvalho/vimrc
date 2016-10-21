@@ -2,7 +2,7 @@ set number
 set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
-colors xoria256
+colors happy_hacking
 set hidden
 
 " set the runtime path to include Vundle and initialize
@@ -28,7 +28,6 @@ Plugin 'garbas/vim-snipmate'
 
 Plugin 'easymotion/vim-easymotion'
 
-" Optional:
 Plugin 'honza/vim-snippets'
 
 Plugin 'OmniCppComplete'
@@ -41,6 +40,10 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'vim-ctrlspace/vim-ctrlspace'
 
 Plugin 'tpope/vim-rails'
+
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -145,4 +148,9 @@ nnoremap  : ;
 
 nmap b <C-^>
 set expandtab
-set tabstop=2
+set tabstop=2 shiftwidth=2 softtabstop=2
+set autoindent
+filetype plugin indent on
+
+" associate *.foo with php filetype
+au BufRead,BufNewFile *.js.coffee setfiletype coffee

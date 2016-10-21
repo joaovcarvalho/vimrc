@@ -1,5 +1,5 @@
-git clone https://github.com/vim-scripts/xoria256.vim.git
-cd xoria256.vim
+git clone https://github.com/YorickPeterse/happy_hacking.vim
+cd happy_hacking.vim
 cp -r colors $HOME/.vim/
 cd ..
 
