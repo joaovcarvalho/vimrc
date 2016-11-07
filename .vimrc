@@ -30,7 +30,6 @@ Plugin 'easymotion/vim-easymotion'
 
 Plugin 'honza/vim-snippets'
 
-Plugin 'OmniCppComplete'
 Plugin 'ervandew/supertab'
 
 Plugin 'kien/ctrlp.vim'
@@ -44,6 +43,9 @@ Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-endwise'
+Plugin 'yggdroot/indentline'
+Plugin 'tpope/vim-dispatch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -93,8 +95,13 @@ set whichwrap+=<,>,h,l
 highlight Search cterm=underline
 
 set t_vb= " Remove the blink in the end or beginnig of file
-map <C-n> :NERDTreeToggle<CR>
 " NERDTree configuration
+silent! nmap <F2> :NERDTreeToggle<CR>
+silent! map <F3> :NERDTreeFind<CR>
+
+let g:NERDTreeMapActivateNode="<F3>"
+let g:NERDTreeMapPreview="<F4>"
+
 let NERDTreeShowHidden=1
 let NERDTreeWinSize=25
 let g:Powerline_symbols = 'fancy'
