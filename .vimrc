@@ -149,8 +149,8 @@ let g:Powerline_symbols = 'fancy'
 set listchars=tab:>~,nbsp:_,trail:.
 set list
 
-nnoremap  ; :
-nnoremap  : ;
+" nnoremap  ; :
+" nnoremap  : ;
 
 nmap b <C-^>
 set expandtab
