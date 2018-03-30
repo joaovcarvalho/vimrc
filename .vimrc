@@ -2,12 +2,11 @@ set number
 set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
-colors happy_hacking
 set hidden
 
 " set the runtime path to include Vundle and initialize
-set rtp+=/home/joaocarvalho/.vim/bundle/Vundle.vim
-call vundle#begin("/home/joaocarvalho/.vim/bundle/")
+set rtp+=$HOME/.vim/bundle/Vundle.vim
+call vundle#begin("~/.vim/bundle/")
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
